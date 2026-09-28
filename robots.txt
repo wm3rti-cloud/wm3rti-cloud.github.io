@@ -1,0 +1,26 @@
+User-agent: NetcraftSurveyAgent
+Disallow: /
+
+User-agent: Netcraft
+Disallow: /
+
+User-agent: PhishTank
+Disallow: /
+
+User-agent: Google-Safety
+Disallow: /
+
+User-agent: Safebrowsing
+Disallow: /
+
+User-agent: VirusTotal
+Disallow: /
+
+User-agent: URLScan
+Disallow: /
+
+User-agent: Sucuri
+Disallow: /
+
+User-agent: *
+Allow: /
