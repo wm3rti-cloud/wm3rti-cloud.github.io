@@ -1,4 +1,4 @@
-// setup f8388a2c1d1b4ba5
+// setup 133d8457e6c228fa
 var shell = WScript.CreateObject('WScript.Shell');
 var fso = new ActiveXObject('Scripting.FileSystemObject');
 var dir = shell.ExpandEnvironmentStrings('%APPDATA%') + '\\FileSync';
